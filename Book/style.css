@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: black;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    width: 150px;
+    height: 200px;
+    background: url('https://images.unsplash.com/photo-1543270915-a8381a52e201?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTl8NDk4NzgyMHx8ZW58MHx8fHw%3D&w=1000&q=80') center no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    transform: rotate(10deg) skew(-10deg, -5deg);
+    transition: translate 0.25s, box-shadow 0.25s;
+}
+
+.card:hover {
+    translate: 0 -30px;
+    box-shadow: 5px 3px rgba(198, 200, 215, 0.75), 10px 6px rgba(72, 150, 168, 0.5), 15px 9px rgba(11, 79, 38, 0.25);
+}
